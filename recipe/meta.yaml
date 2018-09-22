@@ -32,6 +32,7 @@ requirements:
     - cmake  # [not win]
     - {{ compiler('c') }}  # [not win]
     - {{ compiler('cxx') }}  # [not win]
+    - tbb-devel  # [not win]
   host:
     - python
     - swig  # [not win]
