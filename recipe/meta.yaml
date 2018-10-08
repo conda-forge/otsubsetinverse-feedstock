@@ -1,4 +1,4 @@
-{% set version = "1.1" %}
+{% set version = "1.2" %}
 {% set ot_version = "1.12rc1" %}
 
 package:
@@ -8,24 +8,22 @@ package:
 source:
   fn: otsubsetinverse-{{ version }}.tar.gz  # [not win]
   url: https://github.com/openturns/otsubsetinverse/archive/v{{ version }}.tar.gz  # [not win]
-  sha256: 3f21adafc19ff8a5f7b3d2cbacfeb4ef69c7fcc7f706531557e82280ff8c8168  # [not win]
+  sha256: 8907b5ceda7d36e3ef7ac1f4b9e16a7e9e1fb6cc76d7794bf41ef7170127a91a  # [not win]
 
   fn: otsubsetinverse-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otsubsetinverse-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
-  sha256: edf55e38006fe8f6475b66df599323102f935a45964d668613529e4a4c2b3d26  # [win64 and py27]
-
-  fn: otsubsetinverse-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
-  url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otsubsetinverse-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
-  sha256: 0f3dbf344f98b12f77ab3420930e669c4e76acb64f14a8f4f57353691e15d6e7  # [win64 and py35]
+  sha256: b21fb043a4bfb5548c9bdf45c0e2943b10887104beac0f119c6547c4e7670d80  # [win64 and py27]
 
   fn: otsubsetinverse-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otsubsetinverse-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
-  sha256: 3a5414e55a6d3914685b1e60d98e499c50857fcfacab8e6fc2e142d6105efd7f  # [win64 and py36]
+  sha256: 3b5bf73ed079d6f481dd73a176f378dfc2444273d82becda55bd07bca25ae5c9  # [win64 and py36]
+
+  fn: otsubsetinverse-{{ version }}-py3.7-x86_64.exe  # [win64 and py37]
+  url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otsubsetinverse-{{ version }}-py3.7-x86_64.exe  # [win64 and py37]
+  sha256: 4759385e4d1b939fd2e368da2fd1e9d3e450f546ad337cbac1242e898e9b44e7  # [win64 and py37]
 
 build:
   number: 0
-  # not built yet on windows
-  skip: true  # [win]
 
 requirements:
   build:
@@ -36,7 +34,7 @@ requirements:
     - python
     - swig  # [not win]
     - openturns  # [not win]
-    - tbb-devel  # [not win]
+      #- tbb-devel  # [not win]
   run:
     - python
     - openturns
