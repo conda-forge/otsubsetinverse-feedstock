@@ -9,7 +9,7 @@ cxx_compiler:
 docker_image:
 - condaforge/linux-anvil
 openturns:
-- '1.11'
+- 1.12*
 pin_run_as_build:
   openturns:
     max_pin: x.x
