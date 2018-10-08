@@ -34,7 +34,6 @@ requirements:
     - python
     - swig  # [not win]
     - openturns  # [not win]
-      #- tbb-devel  # [not win]
   run:
     - python
     - openturns
