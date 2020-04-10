@@ -1,4 +1,4 @@
-{% set version = "1.5" %}
+{% set version = "1.6" %}
 
 package:
   name: otsubsetinverse
@@ -7,7 +7,7 @@ package:
 source:
   fn: otsubsetinverse-{{ version }}.tar.gz
   url: https://github.com/openturns/otsubsetinverse/archive/v{{ version }}.tar.gz
-  sha256: e029b58bbc44df6fda8eb65225b43c14b14cb1e2c8572768ce8d8a4839460a37
+  sha256: 5522056e61e438da72e5bb0f2edb1cada98d704ba5385ea3bde954af3e7eacce
 
 build:
   number: 0
