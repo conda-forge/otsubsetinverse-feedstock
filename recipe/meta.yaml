@@ -1,4 +1,4 @@
-{% set version = "1.7" %}
+{% set version = "1.8" %}
 
 package:
   name: otsubsetinverse
@@ -7,10 +7,10 @@ package:
 source:
   fn: otsubsetinverse-{{ version }}.tar.gz
   url: https://github.com/openturns/otsubsetinverse/archive/v{{ version }}.tar.gz
-  sha256: a1cfba73ff87317ea04babdd36ee724b5d14ed9bbfbce7fcc1ce8313e172d864
+  sha256: 888076bff4c5533f555667fbde6b898a63de327d953158978a5a11f43e428c79
 
 build:
-  number: 1
+  number: 0
   run_exports:
     - {{ pin_subpackage('otsubsetinverse', max_pin='x.x') }}
 
@@ -23,10 +23,10 @@ requirements:
     - curl  # [win]
   host:
     - python
-    - openturns 1.16*
+    - openturns 1.17*
   run:
     - python
-    - openturns 1.16*
+    - openturns 1.17*
 
 test:
   imports:
