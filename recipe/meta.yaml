@@ -10,7 +10,7 @@ source:
   sha256: 888076bff4c5533f555667fbde6b898a63de327d953158978a5a11f43e428c79
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('otsubsetinverse', max_pin='x.x') }}
 
@@ -23,10 +23,10 @@ requirements:
     - curl  # [win]
   host:
     - python
-    - openturns 1.17*
+    - openturns 1.18*
   run:
     - python
-    - openturns 1.17*
+    - openturns 1.18*
 
 test:
   imports:
