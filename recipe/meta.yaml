@@ -8,9 +8,11 @@ source:
   fn: otsubsetinverse-{{ version }}.tar.gz
   url: https://github.com/openturns/otsubsetinverse/archive/v{{ version }}.tar.gz
   sha256: b7ec9b4b23d73b411ac55b0dad92b86c45c2618d9157dd9ef7cc53b1d106e97d
+  patches:
+    - type_table_order.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('otsubsetinverse', max_pin='x.x') }}
 
