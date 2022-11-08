@@ -12,7 +12,7 @@ source:
     - type_table_order.patch
 
 build:
-  number: 3
+  number: 4
   run_exports:
     - {{ pin_subpackage('otsubsetinverse', max_pin='x.x') }}
 
